@@ -2,8 +2,8 @@ import tensorflow as tf
 
 state = tf.Variable(0, name = "state")
 one = tf.constant(1, name = "one")
-
-train_step = tf.assign(state, state + one)
+one_2 = 1
+train_step = tf.assign(state, state + one_2)
 
 init = tf.global_variables_initializer()
 print(state.name, train_step)
